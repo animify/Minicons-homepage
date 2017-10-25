@@ -5423,3 +5423,17 @@ p code {
     transform: rotate(360deg);
   }
 }
+.contain {
+  padding: 3rem 0;
+}
+#icons .col {
+  padding: 1.3rem 0;
+}
+#icons .col svg,
+#icons .col p {
+  display: inline-block;
+  vertical-align: middle;
+}
+#icons .col p {
+  margin-left: 1rem;
+}
