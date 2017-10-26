@@ -209,15 +209,15 @@ h6 {
 }
 ::selection {
   color: #fff;
-  background-color: #7b8deb;
+  background-color: #ff4d90;
 }
 a {
-  color: #435ce2;
+  color: #ff0060;
   text-decoration: none;
   cursor: pointer;
 }
 a:hover {
-  color: #2a46de;
+  color: #e60056;
 }
 li > a:hover {
   text-decoration: none;
@@ -2147,7 +2147,7 @@ small {
   font-weight: 500;
 }
 .dropdown li:hover a {
-  color: #435ce2;
+  color: #ff0060;
 }
 .dropdown li a {
   color: #53565a;
@@ -2815,23 +2815,23 @@ small {
 }
 .button.primary {
   color: #fff;
-  background-color: #435ce2;
+  background-color: #ff0060;
 }
 .button.primary.disabled,
 .button.primary[disabled],
 .button.primary.loading {
   pointer-events: none;
-  color: #c7cef6;
+  color: #ffb3cf;
 }
 .button.primary.outlined {
-  color: #435ce2;
+  color: #ff0060;
   background-color: transparent;
-  -webkit-box-shadow: inset 0px 0px 0px 1px #435ce2;
-  box-shadow: inset 0px 0px 0px 1px #435ce2;
+  -webkit-box-shadow: inset 0px 0px 0px 1px #ff0060;
+  box-shadow: inset 0px 0px 0px 1px #ff0060;
 }
 .button.primary:hover {
   color: #fff;
-  background-color: #2f4adf;
+  background-color: #eb0058;
 }
 .button.labeled {
   padding-left: 4.2em;
@@ -2965,7 +2965,7 @@ ol.list {
   text-decoration: none;
 }
 .list.links > .item.active a {
-  color: #435ce2;
+  color: #ff0060;
 }
 .list.divided li:first-child,
 .list.divided .item:first-child {
@@ -3207,7 +3207,7 @@ ol.ordered li[value]:before {
 .input input[type="text"]:focus,
 .input input[type="number"]:focus,
 .input textarea:focus {
-  border-color: #435ce2;
+  border-color: #ff0060;
 }
 .input textarea {
   line-height: 1.2rem;
@@ -3302,8 +3302,8 @@ ol.ordered li[value]:before {
   border-radius: 50%;
 }
 .input .radio.selected .toggle {
-  background-color: #435ce2;
-  border-color: #435ce2;
+  background-color: #ff0060;
+  border-color: #ff0060;
 }
 .input.range input[type=range] {
   -webkit-appearance: none;
@@ -3457,7 +3457,7 @@ ol.ordered li[value]:before {
   background-color: #f5f7fa;
 }
 .menu.panel .item.active {
-  background-color: #435ce2;
+  background-color: #ff0060;
   color: #fff;
   font-weight: 500;
 }
@@ -3547,7 +3547,7 @@ ol.ordered li[value]:before {
   background-color: #f5f7fa;
 }
 .menu.pills .item.active {
-  background-color: #435ce2;
+  background-color: #ff0060;
   color: #fff;
 }
 .menu.basic .item {
@@ -3709,16 +3709,16 @@ ol.ordered li[value]:before {
   color: #000;
 }
 .primary:not(.button):not(.text) {
-  background-color: #435ce2;
+  background-color: #ff0060;
 }
 .primary:not(.button):not(.text).light {
-  background-color: #6579e7;
+  background-color: #ff2e7d;
 }
 .primary:not(.button):not(.text).dark {
-  background-color: #203cd0;
+  background-color: #d1004f;
 }
 .text.primary {
-  color: #435ce2;
+  color: #ff0060;
 }
 .ash:not(.button):not(.text) {
   background-color: #6b6c6e;
@@ -3994,7 +3994,7 @@ ol.ordered li[value]:before {
   line-height: 1.62rem;
 }
 .comments .comment .content .creator:hover {
-  color: #435ce2;
+  color: #ff0060;
 }
 .comments .comment .content .text {
   line-height: 1.14rem;
@@ -4225,7 +4225,7 @@ ol.ordered li[value]:before {
   background-color: #f8f9fb;
 }
 .stages .stage.active .header {
-  color: #435ce2;
+  color: #ff0060;
 }
 .stages .stage.active:before {
   border-left-color: #f8f9fb;
@@ -4256,7 +4256,7 @@ ol.ordered li[value]:before {
 }
 code {
   background-color: #f5f7fa;
-  color: #435ce2;
+  color: #670ef5;
   padding: 0.3rem 0.5rem;
   border-radius: 4px;
   font-family: 'Roboto Mono', 'Consolas', 'Monaco', 'Lucida Console', monospace;
@@ -5426,14 +5426,58 @@ p code {
 .contain {
   padding: 3rem 0;
 }
+header {
+  padding: 5rem 0;
+}
+header h4 {
+  color: #8d9196;
+}
+header .button-group {
+  margin-top: 2rem;
+}
+header .button-group .button + .button {
+  margin-left: 1.3rem;
+}
 #icons .col {
   padding: 1.3rem 0;
 }
-#icons .col svg,
-#icons .col p {
+#icons .col .wrap {
+  padding: 0.8rem 0 0 0;
+  margin: 0 1.3rem;
+  border-top: 1px solid #e3e7eb;
+}
+#icons .col .icon {
+  display: block;
+  text-align: center;
+  padding: 3rem 0 1rem 0;
+}
+#icons .col .icon svg {
   display: inline-block;
-  vertical-align: middle;
+  height: 30px;
+  width: 50px;
 }
 #icons .col p {
-  margin-left: 1rem;
+  display: block;
+  font-weight: 600;
+  color: #ff0060;
+  font-size: 1.1rem;
+}
+#icons .col small {
+  display: block;
+  color: #8d9196;
+  margin-top: 0.3rem;
+  content: ' ';
+}
+#icons .col small strong {
+  color: #53565a;
+}
+footer {
+  padding: 3rem 0;
+  margin-top: 4rem !important;
+  display: block;
+  border-top: 1px solid #e3e7eb;
+}
+footer small {
+  padding: 2rem 0;
+  display: block;
 }
