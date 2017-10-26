@@ -19,7 +19,10 @@ minicons.icons.forEach(icon => {
     if (aliases !== null) {
         templateElement.find('.desc small').html(`Aliases: <strong>${aliases}</strong>`)
     }
+
 });
+
+$('.total').text(minicons.icons.length - 1);
 
 minicons.setOptions({
     "observe" : true,

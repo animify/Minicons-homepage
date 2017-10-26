@@ -587,7 +587,7 @@ small {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: auto -15px;
+  margin: auto -1.3rem;
 }
 .equal {
   -webkit-flex-basis: 0;
@@ -600,7 +600,7 @@ small {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   max-width: 100%;
-  padding: 0 15px;
+  padding: 0 1.3rem;
 }
 .col {
   -webkit-box-flex: 1;
@@ -611,7 +611,7 @@ small {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
-  padding: 0 15px;
+  padding: 0 1.3rem;
 }
 @media only screen {
   .xs-equal {
@@ -5439,21 +5439,23 @@ header .button-group .button + .button {
   margin-left: 1.3rem;
 }
 #icons .col {
-  padding: 1.3rem 0;
+  padding: 1.3rem auto;
+}
+#icons .col .desc {
+  border-top: 2px solid #e3e7eb;
+  padding: 1rem 0;
 }
 #icons .col .wrap {
   padding: 0.8rem 0 0 0;
-  margin: 0 1.3rem;
-  border-top: 1px solid #e3e7eb;
 }
 #icons .col .icon {
   display: block;
   text-align: center;
-  padding: 3rem 0 1rem 0;
+  padding: 2rem 0 3rem 0;
 }
 #icons .col .icon svg {
   display: inline-block;
-  height: 30px;
+  height: 24px;
   width: 50px;
 }
 #icons .col p {
@@ -5470,6 +5472,10 @@ header .button-group .button + .button {
 }
 #icons .col small strong {
   color: #53565a;
+}
+#icons .totals small {
+  margin: 1rem auto;
+  display: block;
 }
 footer {
   padding: 3rem 0;
