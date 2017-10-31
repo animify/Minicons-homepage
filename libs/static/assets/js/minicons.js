@@ -108,9 +108,9 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /* eslint no-console: "off" */
 
-var _Minicons = __webpack_require__(3);
+var _minicons = __webpack_require__(3);
 
-var _Minicons2 = _interopRequireDefault(_Minicons);
+var _minicons2 = _interopRequireDefault(_minicons);
 
 var _Validator = __webpack_require__(4);
 
@@ -298,8 +298,8 @@ var MiniconsHandler = function () {
 
         this.firstRun = true;
         this.canObserve = true;
-        this.config = _Minicons2.default.config;
-        this.icons = _Minicons2.default.icons;
+        this.config = _minicons2.default.config;
+        this.icons = _minicons2.default.icons;
         this.defaultProps = {
             xmlns: 'http://www.w3.org/2000/svg'
         };
@@ -402,6 +402,8 @@ var Validator = function () {
                     });
                 }
             }
+
+            return next();
         }
     }, {
         key: 'validateObject',

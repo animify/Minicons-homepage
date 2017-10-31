@@ -29,7 +29,14 @@ minicons.setOptions({
     "config" : {
         "name" : "theme_config",
         "props" : {
-            "stroke" : "#000"
+            "width" : 24,
+            "height" : 24,
+            "viewBox" : "0 0 24 24",
+            "fill" : "none",
+            "stroke" : "#ff0060",
+            "stroke-width" : 4,
+            "stroke-linejoin" : "round",
+            "stroke-linecap" : "round"
         }
     }
 });
