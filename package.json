@@ -10,15 +10,15 @@
   "repository": "https://github.com/animify/Minicons-homepage",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.18.8",
+    "browser-sync": "^2.26.3",
     "extend": "^3.0.0",
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.3",
     "grunt-contrib-pug": "^1.0.0",
     "grunt-contrib-stylus": "^1.2.0",
-    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "gulp": "^3.9.1",
     "gulp-imagemin": "^3.2.0",
-    "gulp-nodemon": "^2.2.1",
+    "gulp-nodemon": "^2.4.1",
     "gulp-pug": "^3.3.0",
     "gulp-stylus": "^2.6.0",
     "gulp-uglify": "^2.1.2",
@@ -36,6 +36,7 @@
     "feather-icons": "^3.3.0",
     "fs-jetpack": "^0.13.3",
     "minicons": "^1.0.0",
+    "natives": "^1.1.6",
     "serve-static": "^1.12.1"
   }
 }
