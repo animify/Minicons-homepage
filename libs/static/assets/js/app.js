@@ -17,28 +17,27 @@ minicons.icons.forEach(icon => {
     $('#icons').append(templateElement);
 
     if (aliases !== null) {
-        templateElement.find('.desc small').html(`Aliases: <strong>${aliases}</strong>`)
+        templateElement.find('.desc small').html(`Aliases: <strong>${aliases}</strong>`);
     }
-
 });
 
 $('.total').text(minicons.icons.length - 1);
 
 minicons.setOptions({
-    "observe" : true,
-    "config" : {
-        "name" : "theme_config",
-        "props" : {
-            "width" : 24,
-            "height" : 24,
-            "viewBox" : "0 0 24 24",
-            "fill" : "none",
-            "stroke" : "#ff0060",
-            "stroke-width" : 4,
-            "stroke-linejoin" : "round",
-            "stroke-linecap" : "round"
-        }
-    }
+    observe: true,
+    config: {
+        name: 'theme_config',
+        props: {
+            width: 24,
+            height: 24,
+            viewBox: '0 0 24 24',
+            fill: 'none',
+            stroke: '#000',
+            'stroke-width': 2,
+            'stroke-linejoin': 'round',
+            'stroke-linecap': 'round',
+        },
+    },
 });
 
 minicons.swap();
